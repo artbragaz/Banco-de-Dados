@@ -1,0 +1,12 @@
+USE BDEX1_HOSPITAL;
+SELECT NOME, DATA_NASC FROM PACIENTES;
+SELECT COUNT(*) FROM MEDICOS;
+SELECT avg(YEAR(from_days(TO_DAYS(NOW())-TO_DAYS(DATA_NASC)))) AS MEDIA_IDADE FROM PACIENTES;
+
+USE BDEX2_PASSAGENS_AEREAS;
+SELECT NOME, CIDADE FROM AEROPORTOS;
+SELECT count(cia_aerea), NOME_FANTASIA FROM VOOS
+inner join cia_aereas
+on cia_aereas.id_cia = voos.cia_aerea
+group by cia_aerea;
+SELECT avg(poltronas) from aeronaves;
