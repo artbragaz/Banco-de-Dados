@@ -1,4 +1,60 @@
 use posto;
+INSERT INTO CLIENTES (idClientes, Nome, DATA_NASCIMENTO) VALUES
+(1, 'Arthur', '25/01/2004'),
+(2, 'Julio', '19/06/2005'),
+(3, 'Matheus', '22/01/2000),
+(4, 'Pedro', '05/08/2014'),
+(5, 'Lucas', '01/02/2003'), 
+(6, 'Ahab'),
+(7, 'Pequod'),
+(8, 'Garganta'),
+(9, 'Matthew'),
+(10, 'Paio);
+INSERT INTO POSTOS_DE_GASOLINA (idPosto_de_gasolina, NOME) VALUES
+(1, 'Posto Koala'),
+(2, 'Auto Posto Vila Velha),
+(3, 'Posto Ipiranga'),
+(4, 'Posto Itapoã'),
+(5, 'Posto Shell'),
+(6, 'Posto Petrobras),
+(7),
+(8),
+(9),
+(10); 
+INSERT INTO FUNCIONARIOS (idFuncionario, Nome, POSTOS_DE_GASOLINA_idPosto_de_Gasolina) VALUES
+(1, 'Victor', 1),
+(2, 'Damien', 2),
+(3, 'Faust', 3,)
+(4, 'Sinclair', 4),
+(5, 'Dom', 5),
+(6, 'John', 6),
+(7, 'Philip', 7),
+(8, 'Doe', 8),
+(9, 'Alexandre', 9),
+(10, 'Rogerio', 10);
+INSERT INTO REGISTROS (idRegistro, Data, FUNCIONARIOS_idFuncionario) VALUES
+(1, '09/05/2024', 1),
+(2, '10/05/2024', 2),
+(3, '12/05/2024', 3),
+(4, '13/05/2024), 4),
+(5, '16/05/2024), 5),
+(6, '17/05/2024', 6),
+(7, '19/05/2024', 7),
+(8, '20/05/2024, 8),
+(9, '21/05/2024, 9),
+(10, '22/05/2024, 10);
+INSERT INTO Clientes_has_Funcionarios (CLIENTES_idClientes, FUNCIONARIOS_IdFuncionarios) VALUES
+(1, 1)
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
+(7, 7),
+(8, 8),
+(9, 9),
+(10, 10);
+
 
 INSERT INTO TIPOS_COMBUSTIVEL (idTIPO_COMBUSTIVEL, TIPO, PRECO) VALUES
 (1, 'Gasolina', '5.40R$'),
@@ -241,58 +297,3 @@ INSERT INTO TIPOS_COMBUSTIVEL (idTIPO_COMBUSTIVEL, TIPO, PRECO) VALUES
 (2, 'Gasolina aditivada', '5.11R$'),
 (3, 'Etanol', '3.28R$'),
 (4, 'Diesel', '5.62R$'); 
-INSERT INTO CLIENTES (idClientes, Nome, DATA_NASCIMENTO) VALUES
-(1, 'Arthur', '25/01/2004'),
-(2, 'Julio', '19/06/2005'),
-(3, 'Matheus', '22/01/2000),
-(4, 'Pedro', '05/08/2014'),
-(5, 'Lucas', '01/02/2003'), 
-(6, 'Ahab'),
-(7, 'Pequod'),
-(8, 'Garganta'),
-(9, 'Matthew'),
-(10, 'Paio);
-INSERT INTO POSTOS_DE_GASOLINA (idPosto_de_gasolina, NOME) VALUES
-(1, 'Posto Koala'),
-(2, 'Auto Posto Vila Velha),
-(3, 'Posto Ipiranga'),
-(4, 'Posto Itapoã'),
-(5, 'Posto Shell'),
-(6, 'Posto Petrobras),
-(7),
-(8),
-(9),
-(10); 
-INSERT INTO FUNCIONARIOS (idFuncionario, Nome, POSTOS_DE_GASOLINA_idPosto_de_Gasolina) VALUES
-(1, 'Victor', 1),
-(2, 'Damien', 2),
-(3, 'Faust', 3,)
-(4, 'Sinclair', 4),
-(5, 'Dom', 5),
-(6, 'John', 6),
-(7, 'Philip', 7),
-(8, 'Doe', 8),
-(9, 'Alexandre', 9),
-(10, 'Rogerio', 10);
-INSERT INTO REGISTROS (idRegistro, Data, FUNCIONARIOS_idFuncionario) VALUES
-(1, '09/05/2024', 1),
-(2, '10/05/2024', 2),
-(3, '12/05/2024', 3),
-(4, '13/05/2024), 4),
-(5, '16/05/2024), 5),
-(6, '17/05/2024', 6),
-(7, '19/05/2024', 7),
-(8, '20/05/2024, 8),
-(9, '21/05/2024, 9),
-(10, '22/05/2024, 10);
-INSERT INTO Clientes_has_Funcionarios (CLIENTES_idClientes, FUNCIONARIOS_IdFuncionarios) VALUES
-(1, 1)
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5),
-(6, 6),
-(7, 7),
-(8, 8),
-(9, 9),
-(10, 10);
